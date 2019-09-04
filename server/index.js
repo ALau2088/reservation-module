@@ -3,6 +3,9 @@ const app = express()
 const port = 3002
 const bodyParser = require('body-parser');
 const db = require('../database/index.js');
+const cors = require('cors')
+
+app.use(cors())
 
 //setting up server and parse data
 app.use(express.static('public'))
